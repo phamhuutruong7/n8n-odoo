@@ -4,14 +4,16 @@ services:
     env: docker
     dockerfilePath: ./Dockerfile
     envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
       - key: N8N_BASIC_AUTH_USER
-        sync: false
+        value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        sync: false
+        value: I@mdarklord1993
       - key: TZ
         value: Europe/Berlin
       - key: N8N_HOST
-        sync: false
+        value: 0.0.0.0
       - key: N8N_PROTOCOL
         value: https
       - key: DATA_FOLDER
